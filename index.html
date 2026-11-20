@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free SOC Analysis with AI Integration Masterclass | SOLETE</title>
+<meta name="description" content="Free masterclass by the Society for Learning Technologies, India. Learn SOC operations, threat detection and AI in cybersecurity. Limited seats — register now.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self' https://docs.google.com; form-action 'none'; base-uri 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b46b8">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/logo.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#home" data-route="home" aria-label="SOLETE home">
+      <img src="assets/logo.jpg" width="44" height="44" alt="SOLETE logo">
+      <span><strong>SOLETE</strong><small>Society for Learning Technologies</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link active" href="#courses" data-route="home" data-scroll="courses">Courses</a>
+      <a class="nav-link" href="#contact" data-route="contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="top-cta" href="#register" data-route="home" data-scroll="register">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-3.87 0-7.5 1.94-7.5 4.5V20h15v-1.25c0-2.56-3.63-4.5-7.5-4.5Z"/></svg>
+        <span>Register Free</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-drawer" id="mobileDrawer" hidden>
+    <a class="drawer-link" href="#courses" data-route="home" data-scroll="courses">Courses</a>
+    <a class="drawer-link" href="#contact" data-route="contact">Contact</a>
+    <a class="drawer-cta" href="#register" data-route="home" data-scroll="register">Register Free</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ================= HOME / MASTERCLASS VIEW ================= -->
+  <div id="homePage">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img class="hero-bg-img" src="assets/hero-bg.jpg" alt="">
+        <div class="hero-bg-scrim"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="tag reveal-fade" data-delay="0">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13.73L4.5 12.64V16c0 2.21 3.36 4 7.5 4s7.5-1.79 7.5-4v-3.36L12 16.73Z"/></svg>
+            <span>Free Masterclass &middot; Registration Open</span>
+          </p>
+
+          <h1 class="hero-title" data-jump-text="immediate">
+            <span class="title-line">SOC Analysis with</span>
+            <span class="title-line title-accent">AI Integration</span>
+          </h1>
+          <svg class="title-swoosh" viewBox="0 0 340 16" fill="none" aria-hidden="true">
+            <path d="M4 11.5C88 3.5 224 2.5 336 9.5" stroke="url(#swooshGrad)" stroke-width="4.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="swooshGrad" x1="4" y1="8" x2="336" y2="8" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f59e0b"/>
+                <stop offset="0.6" stop-color="#ffc928"/>
+                <stop offset="1" stop-color="#fde047" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <p class="lead reveal-fade" data-delay="180">Don&rsquo;t just learn cybersecurity. Learn it with AI. Work through how a Security Operations Center runs, how threats are detected, and where AI fits into the analyst&rsquo;s day.</p>
+
+          <div class="seats reveal-fade" id="seats" data-delay="260" aria-live="polite">
+            <div class="seats-grid">
+              <div class="seats-left-box">
+                <div class="seats-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3Zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5Zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5Z"/></svg>
+                </div>
+                <div class="seats-num-wrap">
+                  <strong id="seatsLeft">&ndash;</strong>
+                  <span id="seatsText">Seats Left</span>
+                </div>
+              </div>
+              <div class="seats-divider" aria-hidden="true"></div>
+              <div class="seats-note-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7Z"/></svg>
+                <p class="seats-note">Limited seats. Registrations close when the seats are full.</p>
+              </div>
+            </div>
+            <div class="bar" role="progressbar" aria-label="Seats filled" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="barFill"></i></div>
+          </div>
+
+          <div class="hero-actions reveal-fade" data-delay="340">
+            <a class="btn primary-cta" href="#register" id="heroBtn">
+              <span>Fill the Form Now</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41L13.17 12Z"/></svg>
+            </a>
+           <!--<button class="btn ghost-cta" type="button" id="overviewBtn">
+              <span class="play-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <span>Watch Overview</span>
+            </button>--> 
+          </div>
+        </div>
+
+        <div class="hero-card reveal-scale" id="register" data-delay="180">
+          <div class="card-header">
+            <div class="card-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm2 11.2V16h-4v-2.8a2.5 2.5 0 1 1 4 0Z"/></svg>
+            </div>
+            <div>
+              <h2>Reserve Your Seat</h2>
+              <p class="sub">Take under a minute. It&rsquo;s free.</p>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div id="formView">
+              <form id="regForm" novalidate autocomplete="on">
+                <div class="field">
+                  <label for="name">Full Name <b aria-hidden="true">*</b></label>
+                  <div class="input-wrap">
+                    <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-3.87 0-7 1.94-7 4.25V20h14v-1.75C19 15.94 15.87 14 12 14Z"/></svg>
+                    <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="As you want it on your certificate">
+                  </div>
+                  <span class="err" data-for="name"></span>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number <b aria-hidden="true">*</b></label>
+                  <div class="input-wrap">
+                    <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg>
+                    <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" maxlength="15" required placeholder="10-digit mobile number">
+                  </div>
+                  <span class="err" data-for="phone"></span>
+                </div>
+
+                <div class="field">
+                  <label for="college">College Name</label>
+                  <div class="input-wrap">
+                    <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 13.73L4.5 12.64V16c0 2.21 3.36 4 7.5 4s7.5-1.79 7.5-4v-3.36L12 16.73Z"/></svg>
+                    <input id="college" name="college" type="text" autocomplete="organization" maxlength="120" placeholder="Your college or organisation">
+                  </div>
+                  <span class="err" data-for="college"></span>
+                </div>
+
+                <div class="field">
+                  <label for="location">Location <b aria-hidden="true">*</b></label>
+                  <div class="input-wrap">
+                    <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg>
+                    <input id="location" name="location" type="text" autocomplete="address-level2" maxlength="80" required placeholder="City / town">
+                  </div>
+                  <span class="err" data-for="location"></span>
+                </div>
+
+                <!-- honeypot: real users never see or fill this -->
+                <div class="hp" aria-hidden="true">
+                  <label for="website">Leave this empty</label>
+                  <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+
+                <button class="btn full submit-cta" type="submit" id="submitBtn">
+                  <svg class="send-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2 .01 7Z"/></svg>
+                  <span class="btn-label">Register Now</span>
+                  <span class="spin" aria-hidden="true"></span>
+                </button>
+                <p class="formmsg" id="formMsg" role="alert"></p>
+                <p class="fine">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 9h-1V7a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4V7Z"/></svg>
+                  <span>Your details are used only to manage this masterclass.</span>
+                </p>
+              </form>
+            </div>
+
+            <div id="doneView" hidden>
+              <div class="check" aria-hidden="true"></div>
+              <h3>You&rsquo;re registered!</h3>
+              <p class="sub">One last step: join the WhatsApp group. Session link and updates will be shared there.</p>
+              <a class="btn wa full" id="waBtn" href="#" target="_blank" rel="noopener noreferrer">Join the WhatsApp Group</a>
+              <p class="fine">Already registered on this device. You can come back to this page anytime to find the group link.</p>
+            </div>
+
+            <div id="fullView" hidden>
+              <h3>Registrations are closed</h3>
+              <p class="sub">All seats for this masterclass are taken. Follow SOLETE for the next batch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path d="M0,48 C320,92 1080,0 1440,56 L1440,80 L0,80 Z" fill="#f7f9fe"/>
+          <path d="M0,46 C320,90 1080,-2 1440,54" fill="none" stroke="#ffc928" stroke-width="4"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="banner-wrap reveal-scroll">
+      <div class="banner-frame">
+        <img class="banner" src="assets/banner.png" width="1112" height="350" alt="Free SOC Analysis with AI Integration Masterclass. Google Form registration now open." loading="lazy">
+      </div>
+    </section>
+
+    <section class="learn" id="courses">
+      <div class="section-head">
+        <div class="head-lines">
+          <span class="accent-line" aria-hidden="true"></span>
+          <h2 data-jump-text="scroll">What the Masterclass Covers</h2>
+          <span class="accent-line" aria-hidden="true"></span>
+        </div>
+        <p class="section-sub reveal-scroll">Get hands-on knowledge in key areas of cybersecurity and AI.</p>
+      </div>
+
+      <div class="grid">
+        <article class="topic-card tone-blue reveal-scroll" data-stagger="0">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm-1 14-3.5-3.5 1.4-1.4L11 13.2l4.1-4.1 1.4 1.4L11 16Z"/></svg>
+          </div>
+          <h3>SOC Operations</h3>
+          <p>How a security operations center is organised, how alerts are triaged and how incidents are handled.</p>
+          <button class="learn-more" type="button" data-topic="soc">
+            <span>Learn More</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41L13.17 12Z"/></svg>
+          </button>
+        </article>
+
+        <article class="topic-card tone-purple reveal-scroll" data-stagger="1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6v2h2a2 2 0 0 1 2 2v2h2v6h-2v2a2 2 0 0 1-2 2h-2v2H9v-2H7a2 2 0 0 1-2-2v-2H3V9h2V7a2 2 0 0 1 2-2h2V3Zm0 6v6h6V9H9Z"/></svg>
+          </div>
+          <h3>AI in Cybersecurity</h3>
+          <p>Where AI speeds up analysis and where an analyst still has to make the call.</p>
+          <button class="learn-more" type="button" data-topic="ai">
+            <span>Learn More</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41L13.17 12Z"/></svg>
+          </button>
+        </article>
+
+        <article class="topic-card tone-green reveal-scroll" data-stagger="2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+          </div>
+          <h3>Threat Detection</h3>
+          <p>Reading logs and alerts to spot suspicious activity early.</p>
+          <button class="learn-more" type="button" data-topic="detection">
+            <span>Learn More</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41L13.17 12Z"/></svg>
+          </button>
+        </article>
+
+        <article class="topic-card tone-amber reveal-scroll" data-stagger="3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm6.93 6h-3.17a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8ZM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96ZM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38a16.5 16.5 0 0 0-.14 2c0 .68.05 1.35.14 2H4.26Zm.81 2h3.17a15.65 15.65 0 0 0 1.38 3.56A8.03 8.03 0 0 1 5.07 16Zm3.17-8H5.07a8.03 8.03 0 0 1 4.55-3.56A15.65 15.65 0 0 0 8.24 8ZM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96ZM14.34 14H9.66a14.7 14.7 0 0 1-.16-2c0-.69.06-1.36.16-2h4.68c.1.64.16 1.31.16 2s-.06 1.36-.16 2Zm.04 5.56A15.65 15.65 0 0 0 15.76 16h3.17a8.03 8.03 0 0 1-4.55 3.56ZM16.36 14c.09-.65.14-1.32.14-2s-.05-1.35-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38Z"/></svg>
+          </div>
+          <h3>Real-world Use Cases</h3>
+          <p>Worked examples drawn from how SOC teams actually use these tools.</p>
+          <button class="learn-more" type="button" data-topic="usecases">
+            <span>Learn More</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41L13.17 12Z"/></svg>
+          </button>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= CONTACT US PAGE VIEW ================= -->
+  <section class="contact-page" id="contactPage" hidden>
+    <div class="contact-hero">
+      <div class="contact-inner">
+        <p class="tag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg>
+          <span>SOLETE &middot; Contact Us</span>
+        </p>
+        <h1 class="contact-title" data-jump-text="contact">Contact Us</h1>
+        <p class="lead">Reach out to the Society for Learning Technologies for masterclass queries and support.</p>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div class="contact-icon tone-blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"/></svg>
+            </div>
+            <h2>Location</h2>
+            <p class="contact-value" id="contactLocation">[Your City / Office Address, India]</p>
+          </article>
+
+          <article class="contact-card">
+            <div class="contact-icon tone-amber">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.25 1.01l-2.2 2.2Z"/></svg>
+            </div>
+            <h2>Contact Number</h2>
+            <p class="contact-value" id="contactPhone">[+91 XXXXX XXXXX]</p>
+          </article>
+        </div>
+
+        <div class="contact-back-wrap">
+          <a class="btn primary-cta" href="#home" data-route="home">
+            <span>&larr; Back to Masterclass</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 48" preserveAspectRatio="none">
+      <path d="M0,24 C360,52 1080,-4 1440,24 L1440,48 L0,48 Z" fill="#071642"/>
+      <path d="M0,22 C360,50 1080,-6 1440,22" fill="none" stroke="#ffc928" stroke-width="4"/>
+    </svg>
+  </div>
+  <div class="foot-inner">
+    <a class="foot-brand" href="#home" data-route="home" aria-label="Back to top">
+      <img src="assets/logo.jpg" width="42" height="42" alt="SOLETE logo" loading="lazy">
+      <span><strong>SOLETE</strong><small>Society for Learning Technologies</small></span>
+    </a>
+
+    <div class="foot-mid">
+      <span class="foot-sep" aria-hidden="true"></span>
+      <p>Learn &bull; Build &bull; Grow</p>
+      <span class="foot-sep" aria-hidden="true"></span>
+    </div>
+
+    <div class="socials" aria-label="SOLETE social channels">
+      <a class="social-btn yt" href="https://www.youtube.com/@soleteindia8689" target="_blank" rel="noopener noreferrer" aria-label="SOLETE on YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.58 7.19a2.75 2.75 0 0 0-1.94-1.95C17.93 4.75 12 4.75 12 4.75s-5.93 0-7.64.49A2.75 2.75 0 0 0 2.42 7.2 28.7 28.7 0 0 0 2 12a28.7 28.7 0 0 0 .42 4.81 2.75 2.75 0 0 0 1.94 1.95c1.71.49 7.64.49 7.64.49s5.93 0 7.64-.49a2.75 2.75 0 0 0 1.94-1.95A28.7 28.7 0 0 0 22 12a28.7 28.7 0 0 0-.42-4.81ZM10 15.25v-6.5L15.65 12 10 15.25Z"/></svg>
+      </a>
+      <a class="social-btn ig" href="https://www.instagram.com/solete_india/" target="_blank" rel="noopener noreferrer" aria-label="SOLETE on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 2a3 3 0 1 0 3 3 3 3 0 0 0-3-3Z"/></svg>
+      </a>
+      <a class="social-btn li" href="https://www.linkedin.com/company/society-for-learning-technologies-solete/" target="_blank" rel="noopener noreferrer" aria-label="SOLETE on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75ZM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68Zm1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="infoModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close dialog">&times;</button>
+    <p class="modal-kicker" id="modalKicker"></p>
+    <h3 id="modalTitle"></h3>
+    <p class="modal-desc" id="modalDesc"></p>
+    <ul class="modal-list" id="modalList"></ul>
+    <a class="btn primary-cta full" href="#register" id="modalCta">Reserve Your Seat &rarr;</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<noscript><p class="noscript">Please enable JavaScript to register.</p></noscript>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
